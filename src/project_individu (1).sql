@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 17 Apr 2025 pada 06.13
--- Versi server: 10.4.32-MariaDB
--- Versi PHP: 8.2.12
+-- Generation Time: Apr 17, 2025 at 09:52 AM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.0.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_kasir`
+-- Table structure for table `tb_kasir`
 --
 
 CREATE TABLE `tb_kasir` (
@@ -38,17 +38,16 @@ CREATE TABLE `tb_kasir` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data untuk tabel `tb_kasir`
+-- Dumping data for table `tb_kasir`
 --
 
 INSERT INTO `tb_kasir` (`id_kasir`, `nama_kasir`, `jk_kasir`, `telp_kasir`, `agama_kasir`, `alamat_kasir`, `password_kasir`) VALUES
-('K01', 'Ahmad Nur Latif Prayogakj', 'Laki-Laki', '081949452687', 'Islam', 'Jakarta Selatan', '123'),
-('K011', 'Ahmad Nur Latif Prayogakj', 'Laki-Laki', '081949452687', 'Islam', 'bandung', '123');
+('011', 'jj', 'Laki-Laki', '088', 'isa', 'jaktim', '222');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_pelanggan`
+-- Table structure for table `tb_pelanggan`
 --
 
 CREATE TABLE `tb_pelanggan` (
@@ -60,25 +59,24 @@ CREATE TABLE `tb_pelanggan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data untuk tabel `tb_pelanggan`
+-- Dumping data for table `tb_pelanggan`
 --
 
 INSERT INTO `tb_pelanggan` (`id_pel`, `nama_pel`, `jk_pel`, `telp_pel`, `alamat_pel`) VALUES
-('P01', 'YOGA', 'Laki-Laki', '08111', 'Bandunga'),
-('P011', 'YOGA', 'Laki-Laki', '08111', 'Bandung');
+('011', 'juan', 'Laki-Laki', '088', 'jaksel');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indeks untuk tabel `tb_kasir`
+-- Indexes for table `tb_kasir`
 --
 ALTER TABLE `tb_kasir`
   ADD PRIMARY KEY (`id_kasir`);
 
 --
--- Indeks untuk tabel `tb_pelanggan`
+-- Indexes for table `tb_pelanggan`
 --
 ALTER TABLE `tb_pelanggan`
   ADD PRIMARY KEY (`id_pel`);
