@@ -197,6 +197,7 @@ private Connection conn = new koneksi().connect();
                 .addContainerGap())
         );
 
+        bsimpan.setBackground(new java.awt.Color(51, 255, 51));
         bsimpan.setText("SIMPAN");
         bsimpan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -204,6 +205,7 @@ private Connection conn = new koneksi().connect();
             }
         });
 
+        bubah.setBackground(new java.awt.Color(204, 204, 204));
         bubah.setText("UBAH");
         bubah.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -211,6 +213,7 @@ private Connection conn = new koneksi().connect();
             }
         });
 
+        bhapus.setBackground(new java.awt.Color(255, 0, 0));
         bhapus.setText("HAPUS");
         bhapus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -243,6 +246,7 @@ private Connection conn = new koneksi().connect();
             }
         });
 
+        bbatal.setBackground(new java.awt.Color(204, 204, 204));
         bbatal.setText("BATAL");
         bbatal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -250,6 +254,7 @@ private Connection conn = new koneksi().connect();
             }
         });
 
+        bkeluar.setBackground(new java.awt.Color(255, 0, 51));
         bkeluar.setText("KELUAR");
         bkeluar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
