@@ -32,6 +32,7 @@ public class menu_utama extends javax.swing.JFrame {
         jMenu1 = new javax.swing.JMenu();
         m_kasir = new javax.swing.JMenuItem();
         m_pelanggan = new javax.swing.JMenuItem();
+        jMenuItem1 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -52,6 +53,14 @@ public class menu_utama extends javax.swing.JFrame {
             }
         });
         jMenu1.add(m_pelanggan);
+
+        jMenuItem1.setText("barang");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItem1);
 
         jMenuBar1.add(jMenu1);
 
@@ -82,6 +91,12 @@ public class menu_utama extends javax.swing.JFrame {
         mk.setVisible(true);
         mk.setLocationRelativeTo(null);
     }//GEN-LAST:event_m_kasirActionPerformed
+
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        master_barang p = new master_barang();
+        p.setVisible(true);
+        p.setLocationRelativeTo(null);// TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -123,6 +138,7 @@ public class menu_utama extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem m_kasir;
     private javax.swing.JMenuItem m_pelanggan;
     // End of variables declaration//GEN-END:variables
