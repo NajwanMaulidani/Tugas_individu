@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3afc7ae3-80c3-4af9-b771-bc6b84fcc456">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     tb_pelanggan.`id_pel` AS tb_pelanggan_id_pel,
+     tb_pelanggan.`nama_pel` AS tb_pelanggan_nama_pel,
+     tb_pelanggan.`jk_pel` AS tb_pelanggan_jk_pel,
+     tb_pelanggan.`telp_pel` AS tb_pelanggan_telp_pel,
+     tb_pelanggan.`alamat_pel` AS tb_pelanggan_alamat_pel
+FROM
+     `tb_pelanggan` tb_pelanggan]]>
+	</queryString>
+	<field name="tb_pelanggan_id_pel" class="java.lang.String"/>
+	<field name="tb_pelanggan_nama_pel" class="java.lang.String"/>
+	<field name="tb_pelanggan_jk_pel" class="java.lang.String"/>
+	<field name="tb_pelanggan_telp_pel" class="java.lang.String"/>
+	<field name="tb_pelanggan_alamat_pel" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="59" splitType="Stretch">
+			<textField>
+				<reportElement x="11" y="0" width="530" height="43" uuid="b60c5dc6-cf8e-4206-aa9a-fb6998508799"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Laporan Pelanggan]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="59" splitType="Stretch">
+			<staticText>
+				<reportElement x="11" y="0" width="100" height="20" uuid="e650fceb-2ea1-4d22-b279-600917ba67a3"/>
+				<text><![CDATA[ID Pelanggan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="117" y="0" width="100" height="20" uuid="1259e8f9-5037-4050-b49e-2fe279ea6d2b"/>
+				<text><![CDATA[Nama Pelabggan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="223" y="0" width="100" height="20" uuid="fa929b57-9f45-4faa-b407-cac3ad62901d"/>
+				<text><![CDATA[Jenis Kelamin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="329" y="1" width="100" height="20" uuid="f477c969-8447-4d5b-8d30-3050e36bd79d"/>
+				<text><![CDATA[Telepon]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="435" y="1" width="100" height="20" uuid="16823e26-0a9d-4f83-b667-0e50ebb8fd2f"/>
+				<text><![CDATA[Alamat Pelanggan]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="433" y="21" width="100" height="20" uuid="310b18be-5f8f-4b1e-aa91-27538509c986"/>
+				<textFieldExpression><![CDATA[$F{tb_pelanggan_alamat_pel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="323" y="21" width="100" height="20" uuid="68080333-50e4-45a1-b41f-d6d823c7593d"/>
+				<textFieldExpression><![CDATA[$F]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="204" y="21" width="100" height="20" uuid="e68eeaf6-abac-4695-885e-5c8995b83c07"/>
+				<textFieldExpression><![CDATA[$F]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="104" y="21" width="100" height="20" uuid="054594b7-df26-4ab9-a9a1-a7d5ee510f37"/>
+				<textFieldExpression><![CDATA[$F]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="11" y="21" width="100" height="20" uuid="7aa2057d-2b75-4d7b-95b4-a70dddc245f2"/>
+				<textFieldExpression><![CDATA[$F]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
